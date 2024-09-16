@@ -30,6 +30,15 @@ body, html {
 
 #job-list li {
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.job-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
 }
 
 main {

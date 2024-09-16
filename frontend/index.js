@@ -7,7 +7,16 @@ async function loadJobs() {
     
     jobs.forEach(job => {
       const li = document.createElement('li');
-      li.textContent = `${job.name} (${job.role})`;
+      const img = document.createElement('img');
+      img.src = job.image;
+      img.alt = `${job.name} icon`;
+      img.className = 'job-icon';
+      
+      const span = document.createElement('span');
+      span.textContent = `${job.name} (${job.role})`;
+      
+      li.appendChild(img);
+      li.appendChild(span);
       jobList.appendChild(li);
     });
   } catch (error) {

@@ -1,5 +1,6 @@
 type Job = 
  record {
+   image: text;
    name: text;
    role: text;
  };
