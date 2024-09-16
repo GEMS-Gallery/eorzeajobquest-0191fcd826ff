@@ -1,0 +1,8 @@
+type Job = 
+ record {
+   name: text;
+   role: text;
+ };
+service : {
+  getAllJobs: () -> (vec Job) query;
+}
